@@ -1,0 +1,12 @@
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\bin\Debug\net6.0\SqlServerWrapper.Wrapper.deps.json
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\bin\Debug\net6.0\SqlServerWrapper.Wrapper.dll
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\bin\Debug\net6.0\SqlServerWrapper.Wrapper.pdb
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.csproj.AssemblyReference.cache
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.AssemblyInfoInputs.cache
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.AssemblyInfo.cs
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.csproj.CoreCompileInputs.cache
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.dll
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\refint\SqlServerWrapper.Wrapper.dll
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\SqlServerWrapper.Wrapper.pdb
+D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\obj\Debug\net6.0\ref\SqlServerWrapper.Wrapper.dll

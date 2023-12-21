@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SqlServerWrapper.Wrapper</id>
+    <version>1.0.0</version>
+    <authors>SqlServerWrapper.Wrapper</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="microsoft.data.sqlclient" version="5.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Wrappers\SqlServerWrapper\SqlServerWrapper.Wrapper\bin\Debug\net6.0\SqlServerWrapper.Wrapper.dll" target="lib\net6.0\SqlServerWrapper.Wrapper.dll" />
+  </files>
+</package>

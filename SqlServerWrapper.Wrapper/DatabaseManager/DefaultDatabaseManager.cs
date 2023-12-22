@@ -126,7 +126,50 @@ public sealed class DefaultDatabaseManager : IDbManager
     }
 
 
-    
+
+    public async Task<TResponse> CallScalarProcedureAsync<TResponse>(string procedureName, CancellationToken cancellationToken = default)
+    {
+        using (SqlConnection sqlConnection = await _sqlConnection.NewSafeConnectionAsync())
+        {
+            using (SqlCommand command = new(procedureName, sqlConnection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+
+                await sqlConnection.OpenAsync(cancellationToken);
+
+                TResponse result = (TResponse)await command.ExecuteScalarAsync(cancellationToken);
+
+                return result;
+            }
+        }
+    }
+
+    public async Task<TResponse> CallScalarProcedureWithParametersAsync<TResponse>(string procedureName, object parameters, CancellationToken cancellationToken = default)
+    {
+        using (SqlConnection sqlConnection = await _sqlConnection.NewSafeConnectionAsync())
+        {
+            using (SqlCommand command = new(procedureName, sqlConnection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+
+                if (VerifyParameters(parameters))
+                {
+                    foreach(PropertyInfo property in parameters.GetType().GetProperties())
+                    {
+                        command.Parameters.AddWithValue($"@{property.Name}", property.GetValue(parameters));
+                    }
+                }
+
+                await sqlConnection.OpenAsync(cancellationToken);
+
+                TResponse result = (TResponse)await command.ExecuteScalarAsync(cancellationToken);
+
+                return result;
+            }
+        }
+    }
+
+
     public async Task<int> ExecuteNonQueryAsync(string cmd, CancellationToken cancellationToken = default) =>
         await ExecuteNonQueryWithParametersAsync(cmd, new { }, cancellationToken);
 
@@ -182,10 +225,10 @@ public sealed class DefaultDatabaseManager : IDbManager
 
 
     
-    public async Task<TResponse> ExecuteScalerAsync<TResponse>(string cmd, CancellationToken cancellationToken = default) =>
-        await ExecuteScalerWithParametersAsync<TResponse>(cmd, null!, cancellationToken);
+    public async Task<TResponse> ExecuteScalarAsync<TResponse>(string cmd, CancellationToken cancellationToken = default) =>
+        await ExecuteScalarWithParametersAsync<TResponse>(cmd, null!, cancellationToken);
     
-    public async Task<TResponse> ExecuteScalerWithParametersAsync<TResponse>(string cmd, object parameters, CancellationToken cancellationToken = default)
+    public async Task<TResponse> ExecuteScalarWithParametersAsync<TResponse>(string cmd, object parameters, CancellationToken cancellationToken = default)
     {
         using (SqlConnection sqlConnection = await _sqlConnection.NewSafeConnectionAsync())
         {
@@ -325,4 +368,5 @@ public sealed class DefaultDatabaseManager : IDbManager
     }
 
     private bool VerifyParameters(object parameters) => parameters != null && GetProperties(parameters).Count() > 0;
+
 }

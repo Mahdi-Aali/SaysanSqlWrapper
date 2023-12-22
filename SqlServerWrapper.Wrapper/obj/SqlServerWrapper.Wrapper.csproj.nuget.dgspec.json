@@ -5,10 +5,10 @@
   },
   "projects": {
     "D:\\Wrappers\\SqlServerWrapper\\SqlServerWrapper.Wrapper\\SqlServerWrapper.Wrapper.csproj": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "restore": {
         "projectUniqueName": "D:\\Wrappers\\SqlServerWrapper\\SqlServerWrapper.Wrapper\\SqlServerWrapper.Wrapper.csproj",
-        "projectName": "SqlServerWrapper.Wrapper",
+        "projectName": "SaysanSqlWrapper",
         "projectPath": "D:\\Wrappers\\SqlServerWrapper\\SqlServerWrapper.Wrapper\\SqlServerWrapper.Wrapper.csproj",
         "packagesPath": "C:\\Users\\mahdi\\.nuget\\packages\\",
         "outputPath": "D:\\Wrappers\\SqlServerWrapper\\SqlServerWrapper.Wrapper\\obj\\",

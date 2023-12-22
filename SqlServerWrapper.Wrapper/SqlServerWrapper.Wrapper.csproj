@@ -4,6 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Sql server Db manager</Title>
+    <RepositoryUrl>https://github.com/Mahdi-Aali/SaysanSqlWrapper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Mahdi-Aali/SaysanSqlWrapper</PackageProjectUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SaysanSqlWrapper</PackageId>
+    <PackageTags>sql server,saysan,mahdi aali,wrapper,sql server wrapper,saysan sql server</PackageTags>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0</FileVersion>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

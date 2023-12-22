@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "SqlServerWrapper.Wrapper/1.0.0": {
+      "SqlServerWrapper.Wrapper/1.1.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.2"
         },
@@ -407,7 +407,7 @@
     }
   },
   "libraries": {
-    "SqlServerWrapper.Wrapper/1.0.0": {
+    "SqlServerWrapper.Wrapper/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
